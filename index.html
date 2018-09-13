@@ -15,17 +15,35 @@
   <body>
 
     <div class="topBar"></div> <!--MAIN NAVIGATION-->
-    <div class="topNav">
-      <nav class="container-fluid">
-        <h2 class="hidden">Main Navigation</h2>
-        <img src="images/logo1.svg" width="125" height="125" alt="purevolume logo">
-        <ol class="text-center">
-          <li><p>01</p><a href="#">Pop Culture</a></li>
-          <li><p>02</p><a href="#">Entertainment</a></li>
-          <li><p>03</p><a href="#">Music</a></li>
-        </ol>
-      </nav>
-    </div> <!--MAIN NAVIGATION END-->
+        <div class="topNav">
+          <nav class="container-fluid">
+            <h2 class="hidden">Main Navigation</h2>
+            <img src="images/purevolume-logo-purple.svg" width="250px" height="100px" id="header-logo" alt="PureVolume logo">
+            <ol class="text-center">
+    			<li class="nav-link-container">
+            		<p class="nav-numbers-font">01</p>
+            			<br>
+            		<a href="#" class="nav-links-font">Pop Culture</a>
+            			<br>
+            		<p class="nav-underscore-font">_</p>
+             	</li>
+              	<li class="nav-link-container">
+              		<p class="nav-numbers-font">02</p>
+              			<br>
+              		<a href="#" class="nav-links-font">Entertainment</a>
+              			<br>
+              		<p class="nav-underscore-font">_</p>
+              	</li>
+              	<li class="nav-link-container">
+              		<p class="nav-numbers-font">03</p>
+              			<br>
+              		<a href="#" class="nav-links-font">Music</a>
+              			<br>
+              		<p class="nav-underscore-font">_</p>
+              	</li>
+            </ol>
+          </nav>
+        </div> <!--MAIN NAVIGATION END-->
 
   <header class="container-fluid"> <!--VIDEO SECTION-->
   <div class="container" id="videoPlayer">
@@ -41,19 +59,18 @@
       <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></div>
     </div>
   </div>
-    <h1>Pure Volume</h1>
-    <i class="fa fa-volume-down"></i>
-    <p>Bringing you the latest pop culture, entertainment and music news. It's all for the love of music.</p>
+    <h1 class="pure-volume-main-text">Pure Volume</h1>
+    <p class="pure-volume-tagline-text">Bringing you the latest pop culture, entertainment and music news. It's all for the love of music.</p>
   </header> <!--VIDEO SECTION END-->
 
     <section id="latestSection"> <!--THE LATEST SECTION-->
-      <h3>01 | The Latest <br /> _</h3>
+      <h3 class="the-lastest-articles-numbers">01 | The Latest<br />_</h3>
       <div id="latestBg" class="row">
           <div id="latestImage" class="col-11 col-md-6">
-            <img src="images/img00.jpg" width="300" height="300">
+            <img src="images/img00.jpg" width="600">
           </div>
           <div class="category col-1 order-md-5 col-md-1">
-            <h5><a href="#">Entertainment <br /> _</a></h5>
+            <h5><a href="#" class="the-latest-articles-categorys">Entertainment <br /> _</a></h5>
           </div>
           <div id="latestText" class="col-12 order-md-1 col-md-5">
             <h4>Drake's Charmed Life: The Tough Times And Successes of Aubrey Graham</h4>
@@ -125,20 +142,59 @@
 </div>
 
 <footer class="container-fluid"> <!--FOOTER STARTS HERE-->
+<div id="footer-image-container">
   <h2 class="hidden">Footer</h2>
-  <img src="images/logo1.svg" width="125" height="125" class="mx-auto d-block">
+  <img src="images/purevolume-logo-offwhite.svg" width="200" id="footer-logo" class="mx-auto d-block">
   <nav class="col-center">
     <h2 class="hidden">Footer Navigation</h2>
     <ol class="text-center">
-      <li><p>01</p><a href="#">About</a></li>
-      <li><p>02</p><a href="#">Contact</a></li>
-      <li><p>03</p><a href="#">Copyright</a></li>
-      <li><p>04</p><a href="#">Privacy</a></li>
-      <li><p>05</p><a href="#">Terms</a></li>
-      <li><p>06</p><a href="#">Impressum</a></li>
+		<li>
+     		<p class="footer-number-font">01</p>
+     			<br>
+     		<a href="#" class="footer-links-font">About</a>
+     			<br>
+     		<p class="footer-underscore-font">_</p>
+     	</li>
+      	<li>
+      		<p class="footer-number-font">02</p>
+      			<br>
+      		<a href="#" class="footer-links-font">Contact</a>
+      			<br>
+      		<p class="footer-underscore-font">_</p>
+      	</li>
+      	<li>
+      		<p class="footer-number-font">03</p>
+      			<br>
+      		<a href="#" class="footer-links-font">Copyright</a>
+      			<br>
+      		<p class="footer-underscore-font">_</p>
+      	</li>
+      	<li>
+      	<p class="footer-number-font">04</p>
+      		<br>
+      	<a href="#" class="footer-links-font">Privacy</a>
+      		<br>
+      	<p class="footer-underscore-font">_</p>
+      	</li>
+     	<li>
+     		<p class="footer-number-font">05</p>
+     			<br>
+     		<a href="#" class="footer-links-font">Terms</a>
+     			<br>
+     		<p class="footer-underscore-font">_</p>
+     	</li>
+      	<li>
+      		<p class="footer-number-font">06</p>
+      			<br>
+      		<a href="#" class="footer-links-font">Impressum</a>
+      			<br>
+      		<p class="footer-underscore-font">_</p>
+      	</li>
     </ol>
   </nav>
+</div>
 </footer> <!--FOOTER ENDS HERE-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

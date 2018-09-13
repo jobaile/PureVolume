@@ -357,12 +357,12 @@ header p {
 
 /**********Footer***********/
 footer {
-  	background-color: #3d1144;
-  	padding: 1em;
+  background-color: #3d1144;
+  padding: 1em;
 	background-image: url(../images/recordplayer-bckgnd-img.jpg);
 	background-position: center; /* Center the image */
-  	background-repeat: no-repeat;
-  	background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #footer-logo {
