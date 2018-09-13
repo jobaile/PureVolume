@@ -9,140 +9,149 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"> <!--CSS FILE YOU CAN EDIT-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
 
   <body>
 
     <div class="topBar"></div> <!--MAIN NAVIGATION-->
-    <div class="topNav">
-      <nav class="container-fluid">
-        <h2 class="hidden">Main Navigation</h2>
-        <img src="images/purevolume-logo-purple.svg" width="250px" height="100px" id="header-logo" alt="PureVolume logo">
-        <ol class="text-center">
-			<li class="nav-link-container">
-        		<p class="nav-numbers-font">01</p>
-        			<br>
-        		<a href="#" class="nav-links-font">Pop Culture</a>
-        			<br>
-        		<p class="nav-underscore-font">_</p>
-         	</li>
-          	<li class="nav-link-container">
-          		<p class="nav-numbers-font">02</p>
-          			<br>
-          		<a href="#" class="nav-links-font">Entertainment</a>
-          			<br>
-          		<p class="nav-underscore-font">_</p>
-          	</li>
-          	<li class="nav-link-container">
-          		<p class="nav-numbers-font">03</p>
-          			<br>
-          		<a href="#" class="nav-links-font">Music</a>
-          			<br>
-          		<p class="nav-underscore-font">_</p>
-          	</li>
-        </ol>
-      </nav>
-    </div> <!--MAIN NAVIGATION END-->
+        <div class="topNav">
+          <nav class="container-fluid">
+            <h2 class="hidden">Main Navigation</h2>
+            <img src="images/purevolume-logo-purple.svg" width="250" height="100" id="header-logo" alt="PureVolume logo">
+            <ol class="text-center">
+    			<li class="nav-link-container">
+            		<p class="nav-numbers-font">01</p>
+            			<br>
+            		<a href="#" class="nav-links-font">Pop Culture</a>
+            			<br>
+            		<p class="nav-underscore-font">_</p>
+             	</li>
+              	<li class="nav-link-container">
+              		<p class="nav-numbers-font">02</p>
+              			<br>
+              		<a href="#" class="nav-links-font">Entertainment</a>
+              			<br>
+              		<p class="nav-underscore-font">_</p>
+              	</li>
+              	<li class="nav-link-container">
+              		<p class="nav-numbers-font">03</p>
+              			<br>
+              		<a href="#" class="nav-links-font">Music</a>
+              			<br>
+              		<p class="nav-underscore-font">_</p>
+              	</li>
+            </ol>
+          </nav>
+        </div> <!--MAIN NAVIGATION END-->
 
   <header class="container-fluid"> <!--VIDEO SECTION-->
-    <video id="headerVid" poster="" width="1024" height="400" alt="promotional video">
-      <source src="assets/test.mp4" type="video/mp4"/>
+
+<div class="container" id="videoPlayer">
+    <video id="headerVid" poster="" alt="promotional video">
+      <source src="assets/desktop.mp4" type="video/mp4"/>
         Your browser does not support the video files! Please try another browser.
     </video>
-    <div id="controls">
-      <button id="playPause">Play</button>
+
+    <div id="vidControls">
+      <button id="rewind"><i class="fas fa-step-backward"></i></button>
+      <button id="playPause"><i class="fas fa-play"></i></button>
       <input type="range" id="seek-bar" class="slider" value="0">
-      <button id="rewind" class="control">Rewind</button>
-      <button id="muteVideo" class="control">Mute</button>
-      <button id="full-screen" class="control">Full Screen</button>
+      <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
+      <input type="range" id="volumeBar" value="1" min="0" max="1" step="0.1">
+      <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></div>
     </div>
     <h1 class="pure-volume-main-text">Pure Volume</h1>
     <p class="pure-volume-tagline-text">Bringing you the latest pop culture, entertainment and music news. It's all for the love of music.</p>
   </header> <!--VIDEO SECTION END-->
 
-    <section class="container-fluid" id="latestSection"> <!--THE LATEST SECTION-->
+
+    <section id="latestSection"> <!--THE LATEST SECTION-->
+      <div class="container-fluid">
       <h3 class="the-lastest-articles-numbers">01 | The Latest<br />_</h3>
       <div id="latestBg" class="row">
-          <div id="latestImage" class="col-md-6">
-            <img src="images/img00.jpg">
+          <div id="latestImage" class="col-11 col-md-5 offset-md-1">
+            <img src="images/img00.jpg" width="500"  class="img-fluid">
           </div>
-          <div id="latestText" class="col-md-5">
+          <div class="category col-1 order-md-5 col-md-1">
+            <h5><a href="#" class="the-latest-articles-categorys">Entertainment <br /> _</a></h5>
+          </div>
+          <div id="latestText" class="col-12 order-md-2 col-md-4">
             <h4>Drake's Charmed Life: The Tough Times And Successes of Aubrey Graham</h4>
             <p>Remember when Drake was just a disabled ex-basketball star attending a fictional Canadian high school? Nobody would ever have guessed that he would eventually become one of the most beloved and successful icons ... read more.</p>
-          </div>
-          <div class="category col-md-1">
-            <h5><a href="#" class="the-latest-articles-categorys">Entertainment<br />_</a></h5>
           </div>
       </div>
     </section> <!--THE LATEST SECTION END-->
 
-    <div class="container">
-      <div class="row">
-      <div class="col-md-6">
-        <h3>02 <br /> _ <br /></h3>
-        <div class="row">
-            <div class="col-11 col-md-11">
-              <img src="images/image01.jpg" width="200" height="200">
-            </div>
-            <div class="category col-1 col-md-1">
-              <h5><a href="#">Entertainment <br /> _</a></h5>
-            </div>
-            <div class="col-12 col-md-12">
-              <h4>Celebrities Who Fell In Love With A Fan (And Then Got Married)</h4>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>03 <br /> _ <br /></h3>
-        <div class="row">
-            <div class="col-11 col-md-11">
-              <img src="images/img02.jpg" width="200" height="200">
-            </div>
-            <div class="category col-1 col-md-1">
-              <h5><a href="#">Entertainment <br /> _</a></h5>
-            </div>
-            <div class="col-12 col-md-12">
-              <h4>A Beginner’s Guide To The History Of Vinyl And How It’s The New Retro Thing</h4>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>04 <br /> _ <br /></h3>
-        <div class="row">
-            <div class="col-11 col-md-11">
-              <img src="images/img03.jpg" width="200" height="200">
-            </div>
-            <div class="category col-1 col-md-1">
-              <h5><a href="#">Entertainment <br /> _</a></h5>
-            </div>
-            <div class="col-12 col-md-12">
-              <h4>These Stars Charge An Arm And A Leg For Their Clothing Line – Is It Worth It?</h4>
-            </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h3>05 <br /> _ <br /></h3>
-        <div class="row">
-            <div class="col-11 col-md-11">
-              <img src="images/img04.jpg" width="200" height="200">
-            </div>
-            <div class="category col-1 col-md-1">
-              <h5><a href="#">Entertainment <br /> _</a></h5>
-            </div>
-            <div class="col-12 col-md-12">
-              <h4>Jack White: From Altar Boy To Rock God</h4>
-            </div>
-        </div>
-      </div>
-      </div>
-      <button>View More</button>
-    </div>
 
+<div class="container" id="articleSection">
+  <div class="row">
+  <div class="col-12 col-md-6">
+    <h3>02 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="article-post  col-11 col-md-11">
+          <img src="images/image01.jpg" class="img-fluid">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Uncategorized<br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
+          <h4>Celebrities Who Fell In Love With A Fan (And Then Got Married)</h4>
+        </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <h3>03 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="article-post col-11 col-md-11">
+          <img src="images/img02.jpg" class="img-fluid">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Pop Culture<br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
+          <h4>A Beginner’s Guide To The History Of Vinyl And How It’s The New Retro Thing</h4>
+        </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <h3>04 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="article-post col-11 col-md-11">
+          <img src="images/img03.jpg" class="img-fluid">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Pop Culture<br/> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
+          <h4>These Stars Charge An Arm And A Leg For Their Clothing Line – Is It Worth It?</h4>
+        </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <h3>05 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="article-post col-11 col-md-11">
+          <img src="images/img04.jpg" class="img-fluid">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Music<br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
+          <h4>Jack White: From Altar Boy To Rock God</h4>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <a href="#" id="btn-view-more" class="center">View More</a>
+  </div>
+</div>
 
 <footer class="container-fluid"> <!--FOOTER STARTS HERE-->
 <div id="footer-image-container">
   <h2 class="hidden">Footer</h2>
-  <img src="images/purevolume-logo-offwhite.svg" width="200" id="footer-logo" class="mx-auto d-block">
+  <img src="images/purevolume-logo-white.svg" width="200" id="footer-logo" class="mx-auto d-block">
   <nav class="col-center">
     <h2 class="hidden">Footer Navigation</h2>
     <ol class="text-center">
@@ -192,6 +201,7 @@
   </nav>
 </div>
 </footer> <!--FOOTER ENDS HERE-->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
