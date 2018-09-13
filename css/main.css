@@ -85,6 +85,18 @@ a {
   display: inline-block;
 }
 
+button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.fa-pause, .fa-step-backward, .fa-volume-up, .fa-expand-arrows-alt {
+	color: white;
+}
 /***************************/
 
 /**********Top Navigation***********/
@@ -193,14 +205,12 @@ header p {
 }
 
 .post {
-  background-color: #c2b2c9;
   border: 1px solid red;
-  height: 500px;
-  width: 150px;
+  height: 100%;
   padding-left: 3em;
   padding-top: 2em;
+	margin-bottom: 1em;
 }
-
 
 /***************************/
 

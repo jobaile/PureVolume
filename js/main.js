@@ -11,12 +11,13 @@
 
   function playVideo(){
     console.log("from playVideo");
-    if (video.paused == true) {
+    var svg = this.firstElementChild;
+    if (video.paused) {
+    svg.dataset.icon = "pause"
     video.play();
-    playButton.innerHTML = "Pause";
   } else {
+    svg.dataset.icon = "play"
     video.pause();
-    playButton.innerHTML = "Play";
   }
   }
 
@@ -39,12 +40,14 @@
 
   function muteVideo(){
     console.log("from muteVideo");
-    if (video.muted == false) {
+    var volumeChange = this.firstElementChild;
+    if (video.muted) {
     video.muted = true;
-    muteButton.innerHTML = "Unmute";
+    volumeChange.dataset.icon = "volume-up";
     } else {
     video.muted = false;
-    muteButton.innerHTML = "Mute";
+    volumeChange.dataset.icon = "volume-off";
+
     }
   }
 
@@ -59,12 +62,11 @@
     }
   }
 
-
-  playButton.addEventListener("click", playVideo, false); //VIDEO
+  playButton.addEventListener("click", playVideo); //VIDEO
   seekBar.addEventListener("change", progressBar, false); //SEEK BAR
   muteButton.addEventListener("click", muteVideo, false); //MUTE
   rewindVideo.addEventListener("click", rewindVid, false); //REWIND VIDEO X
-  fullVideo.addEventListener("click", fullScreen, false); //FULLSCREEN
+  fullVideo.addEventListener("click", fullScreen); //FULLSCREEN
   video.addEventListener("timeupdate", progPlay, false); //TIME UPDATE
 
 })();

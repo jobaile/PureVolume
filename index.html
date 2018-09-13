@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"> <!--CSS FILE YOU CAN EDIT-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
 
   <body>
@@ -27,79 +28,101 @@
     </div> <!--MAIN NAVIGATION END-->
 
   <header class="container-fluid"> <!--VIDEO SECTION-->
+  <div class="container" id="videoPlayer">
     <video id="headerVid" poster="" width="1024" height="400" alt="promotional video">
       <source src="assets/test.mp4" type="video/mp4"/>
         Your browser does not support the video files! Please try another browser.
     </video>
     <div id="controls">
-      <button id="playPause">Play</button>
+      <button id="playPause"><i class="fas fa-pause"></i></button>
       <input type="range" id="seek-bar" class="slider" value="0">
-      <button id="rewind" class="control">Rewind</button>
-      <button id="muteVideo" class="control">Mute</button>
-      <button id="full-screen" class="control">Full Screen</button>
+      <button id="rewind"><i class="fas fa-step-backward"></i></button>
+      <button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>
+      <button id="full-screen" class="controls"><i class="fa fa-expand-arrows-alt"></i></div>
     </div>
+  </div>
     <h1>Pure Volume</h1>
+    <i class="fa fa-volume-down"></i>
     <p>Bringing you the latest pop culture, entertainment and music news. It's all for the love of music.</p>
   </header> <!--VIDEO SECTION END-->
 
     <section id="latestSection"> <!--THE LATEST SECTION-->
       <h3>01 | The Latest <br /> _</h3>
       <div id="latestBg" class="row">
-          <div id="latestImage" class="col-md-6">
-            <img src="images/img00.jpg">
+          <div id="latestImage" class="col-11 col-md-6">
+            <img src="images/img00.jpg" width="300" height="300">
           </div>
-          <div id="latestText" class="col-md-5">
+          <div class="category col-1 order-md-5 col-md-1">
+            <h5><a href="#">Entertainment <br /> _</a></h5>
+          </div>
+          <div id="latestText" class="col-12 order-md-1 col-md-5">
             <h4>Drake's Charmed Life: The Tough Times And Successes of Aubrey Graham</h4>
             <p>Remember when Drake was just a disabled ex-basketball star attending a fictional Canadian high school? Nobody would ever have guessed that he would eventually become one of the most beloved and successful icons ... read more.</p>
-          </div>
-          <div class="category col-md-1">
-            <h5><a href="#">Entertainment <br /> _</a></h5>
           </div>
       </div>
     </section> <!--THE LATEST SECTION END-->
 
-    <section class="container-fluid"> <!--POSTS STARTS HERE-->
-      <ul class="row">
 
-        <li class="post col-12 col-md-6"> <!--POST 1-->
-          <h3>02 <br /> _ <br /></h4>
-          <img src="images/image01.jpg" width="415" height="340">
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    <h3>02 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="col-11 col-md-11">
+          <img src="images/image01.jpg" width="200" height="200">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Entertainment <br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
           <h4>Celebrities Who Fell In Love With A Fan (And Then Got Married)</h4>
-          <div class="category">
-            <h5>Uncategorized <br /> _ </h5>
-          </div>
-        </li>
-
-        <li class="post col-12 col-md-6"> <!--POST 2-->
-          <h3>03 <br /> _ <br /></h4>
-          <img src="images/img02.jpg" width="415" height="340">
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h3>03 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="col-11 col-md-11">
+          <img src="images/img02.jpg" width="200" height="200">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Entertainment <br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
           <h4>A Beginner’s Guide To The History Of Vinyl And How It’s The New Retro Thing</h4>
-          <div class="category">
-            <h5>Pop Culture <br /> _</h5>
-          </div>
-        </li>
-
-        <li class="post col-12 col-md-6"> <!--POST 3-->
-          <h3>04 <br /> _ <br /></h4>
-          <img src="images/img03.jpg" width="415" height="340">
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h3>04 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="col-11 col-md-11">
+          <img src="images/img03.jpg" width="200" height="200">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Entertainment <br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
           <h4>These Stars Charge An Arm And A Leg For Their Clothing Line – Is It Worth It?</h4>
-          <div class="category">
-            <h5>Pop Culture <br /> _ <br /></h5>
-          </div>
-        </li>
-
-        <li class="post col-12 col-md-6"> <!--POST 4-->
-          <h3>05 <br /> _ <br /></h4>
-          <img src="images/img04.jpg" width="415" height="340">
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h3>05 <br /> _ <br /></h3>
+    <div class="row">
+        <div class="col-11 col-md-11">
+          <img src="images/img04.jpg" width="200" height="200">
+        </div>
+        <div class="category col-1 col-md-1">
+          <h5><a href="#">Entertainment <br /> _</a></h5>
+        </div>
+        <div class="col-12 col-md-12">
           <h4>Jack White: From Altar Boy To Rock God</h4>
-          <div class="category">
-            <h5>Music <br /> _ <br /></h5>
-          </div>
-        </li>
-
-    </ul>
-      <button>View More</button>
-    </section> <!--POST ENDS HERE-->
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
 
 <footer class="container-fluid"> <!--FOOTER STARTS HERE-->
   <h2 class="hidden">Footer</h2>
