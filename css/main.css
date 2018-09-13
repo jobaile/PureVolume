@@ -204,13 +204,32 @@ header p {
   float: left;
 }
 
-.post {
-  border: 1px solid red;
-  height: 100%;
-  padding-left: 3em;
-  padding-top: 2em;
-	margin-bottom: 1em;
+#articleSection h4 {
+	font-size: 1.2rem;
+	margin: 1rem 0 1rem 0;
+	padding-right: 2.5rem;
 }
+
+#articleSection h3 {
+	font-size: 1.2rem;
+}
+
+}
+.article-post {
+  margin: 1rem 0 1rem 0;
+}
+
+.article-post img {
+	width: 300px;
+}
+
+@media (min-width: 992px) {
+	.article-post img {
+		width: 450px;
+	}
+}
+
+
 
 /***************************/
 
