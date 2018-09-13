@@ -85,6 +85,14 @@ a {
   display: inline-block;
 }
 
+body {
+	background-image: url(../images/bckgnd-texture-index-desktop.png); /* The image used */
+  	background-position: center; /* Center the image */
+  	background-repeat: repeat-y; /* Repeat the image horizontally */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
 button {
   background-color: Transparent;
   background-repeat:no-repeat;
@@ -100,6 +108,10 @@ button {
 /***************************/
 
 /**********Top Navigation***********/
+#header-logo {
+	margin: 20px;
+}
+
 .topBar {
   width: 100%;
   height: 20px;
@@ -119,6 +131,41 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+.nav-link-container {
+	margin-left: 40px;
+	}
+
+.nav-numbers-font {
+	font-size: 12px;
+	color: #5a5a5a;
+	float: left;
+	font-weight: lighter;
+	}
+
+/* unvisited link */
+.nav-links-font {
+	font-size: 17px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	color: #3d1144;
+	}
+
+/* mouse over link */
+.nav-links-font:hover {
+	color: #ac4db3;
+	transition-duration: 0.5s;
+	text-decoration: none;
+	}
+
+.nav-underscore-font {
+	font-size: 12px;
+	color: #5a5a5a;
+	float: left;
+	font-weight: lighter;
+	}
 
 @media (min-width: 992px) {
 .topNav nav {
@@ -140,12 +187,24 @@ button {
 .topNav nav ol li p {
    display: block;
  }
-
- }
+}
 /***************************/
 
 
 /**********Header***********/
+.pure-volume-main-text {
+	font-size: 107px;
+	color: #ac4db3;
+	float: right;
+	margin: 0 auto;
+}
+
+.pure-volume-tagline-text {
+	font-size: 15px;
+	color: #4d4d4d;
+	float: right;
+}
+
 header {
   background-color: black;
   padding: 1rem;
@@ -173,19 +232,24 @@ header p {
   font-weight: bold;
   color: black;
   margin: 1rem;
+	clear: both;
 }
 
 #latestBg {
-  background-color: #512653;
-  padding: 1.5rem;
+	background-color: #3d1144;
+  	padding: 1em;
+	background-image: url(../images/recordplayer-bckgnd-img.jpg);
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
+  	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #latestBg h4 {
-  background-color: #512653;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ac4db3;
-  margin-top: 60px;
+  	font-size: 22px;
+	line-height: 28px;
+  	font-weight: inherit;
+  	color: #ac4db3;
+  	margin-top: 60px;
 	margin-bottom: 10px;
 	padding-right: 20px;
 }
@@ -193,7 +257,8 @@ header p {
 #latestText p
 {
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 18px;
 	margin-bottom: 60px;
 	padding-right: 20px;
 	font-family: Raleway;
@@ -203,6 +268,66 @@ header p {
 .latestImage {
   float: left;
 }
+
+.post {
+  border: 1px solid red;
+  height: 500px;
+  width: 150px;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+
+/* Class for the numbers that are above each of the latest articles */
+.the-lastest-articles-numbers {
+	font-size: 36px;
+	color: #4d4d4d;
+	font-weight: normal;
+  	line-height: 0.333;
+	margin-bottom: 30px;
+}
+
+/* Class for the titles of the latest articles */
+.the-latest-artlicles-titles {
+	color: #ac4db3;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 10px;
+	font-weight: lighter;
+	float: left;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.the-latest-artlicles-titles:hover {
+	color: #4d4d4d;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+}
+
+.the-latest-articles-categorys {
+	font-size: 16px;
+	color: #4d4d4d;
+	line-height: 12px;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.the-latest-articles-categorys:hover {
+	text-decoration: none;
+	color: #7E7E7E;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+}
+
+#latestSection .the-latest-articles-categorys {
+	color: #fff;
+	font-size: 25px;
+	font-weight: lighter;
+}
+
+
 
 #articleSection h4 {
 	font-size: 1.2rem;
@@ -228,15 +353,20 @@ header p {
 		width: 450px;
 	}
 }
-
-
-
 /***************************/
 
 /**********Footer***********/
 footer {
-  background-color: grey;
-  padding: 1em;
+  	background-color: #3d1144;
+  	padding: 1em;
+	background-image: url(../images/recordplayer-bckgnd-img.jpg);
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#footer-logo {
+	margin: 0 auto;
 }
 
 footer h2 {
@@ -252,5 +382,42 @@ footer nav ol li {
   display: inline-block;
   padding-right: 2rem;
   margin-bottom: 1.5rem;
+	margin-left: 0px;
+	margin-right: 0px;
 }
+
+.footer-number-font {
+	font-size: 12px;
+	color: #c5c5c5;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-weight: lighter;
+	}
+
+.footer-links-font {
+	font-size: 12px;
+	color: #c5c5c5;
+	float: left;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	}
+
+/* mouse over link */
+.footer-links-font:hover {
+	color: #ac4db3;
+	transition-duration: 0.5s;
+	text-decoration: none;
+	}
+
+.footer-underscore-font {
+	font-size: 12px;
+	line-height: 5px;
+	color: #c5c5c5;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-weight: lighter;
+	}
 /***************************/
