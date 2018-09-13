@@ -4,12 +4,7 @@ This project is a redesign of [PureVolume](https://purevolume.com).
 
 ## Getting Started
 We created the documents necessary for the project.
-We have the index.html set-up and our secondary page will be a post.
-
-## Getting Started
-We created the documents necessary for the project. 
-We have the index.html set-up and our secondary page will be a post. 
-
+We have the index.html set-up and our secondary page is "article.html".
 ## Built with
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap Framework
 
