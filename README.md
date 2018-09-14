@@ -13,9 +13,6 @@ We created the documents necessary for the project.
 We have the index.html set-up and our secondary page is "article.html".
 ## Built with
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap Framework
-* HTML5
-* CSS
-* JavaScript
 
 ### Progress
 * 9/07 - Started repo; created base files; created designs
@@ -25,6 +22,7 @@ We have the index.html set-up and our secondary page is "article.html".
 * 9/12 - Checkpoint; Finishing off HTML files and video
 * 9/12 - Finalizing index.html, video player and video are finished
 * 9/12 - Checkpoint; Finishing off HTML files and video
+* 9/13 - We're done!
 
 ### Installing
 

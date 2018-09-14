@@ -8,8 +8,6 @@
   var volumeBar = document.querySelector('#volumeBar');
   var fullVideo = document.querySelector("#full-screen");
 
-// Functions
-
   function playVideo(){
     console.log("from playVideo");
     if (video.paused) {
@@ -58,7 +56,7 @@
     vidPlayer.volume = volumeBar.value;
   }
 
-  function fullScreen(){
+  function fullScreen(){ //This will give default video controls
     console.log("from fullScreen");
     if (video.requestFullscreen) {
       video.requestFullscreen();
@@ -68,8 +66,6 @@
       video.webkitRequestFullscreen(); // Chrome and Safari
     }
   }
-
-//Event Listeners
 
   playButton.addEventListener("click", playVideo); //VIDEO
   seekBar.addEventListener("change", progressBar, false); //SEEK BAR

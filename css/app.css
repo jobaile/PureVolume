@@ -1,0 +1,575 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS RESET!!!
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**********Global***********/
+ol {
+  list-style-type: decimal;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h4 {
+	color: #ac4db3;
+}
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.category {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+  color: grey;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: right;
+}
+
+a {
+  color: #3d1144;
+  font-weight: bold;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+body {
+	background-image: url(../images/bckgnd-texture-index-desktop.png); /* The image used */
+  	background-position: center; /* Center the image */
+  	background-repeat: repeat-y; /* Repeat the image horizontally */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+/***************************/
+
+/**********Top Navigation***********/
+#header-logo {
+	margin: 20px;
+}
+
+.topBar {
+  width: 100%;
+  height: 20px;
+  background-color: #512653;
+}
+
+.topNav nav ol li{
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.topNav nav {
+  display: block;
+}
+
+.topNav nav img {
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-link-container {
+	margin-left: 40px;
+	}
+
+.nav-numbers-font {
+	font-size: 12px;
+	color: #5a5a5a;
+	float: left;
+	font-weight: lighter;
+	}
+
+/* unvisited link */
+.nav-links-font {
+	font-size: 17px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	color: #3d1144;
+	}
+
+/* mouse over link */
+.nav-links-font:hover {
+	color: #ac4db3;
+	transition-duration: 0.5s;
+	text-decoration: none;
+	}
+
+.nav-underscore-font {
+	font-size: 12px;
+	color: #5a5a5a;
+	float: left;
+	font-weight: lighter;
+	}
+
+@media (min-width: 992px) {
+.topNav nav {
+   display: flex;
+ }
+
+.topNav nav img {
+   margin: 0;
+ }
+
+.topNav nav ol {
+   margin-top: 3rem;
+ }
+
+.topNav nav ol li {
+   display: inline-block;
+ }
+
+.topNav nav ol li p {
+   display: block;
+ }
+}
+/***************************/
+
+
+/**********Header***********/
+.pure-volume-main-text {
+	font-size: 107px;
+	color: #ac4db3;
+	float: right;
+	margin: 0 auto;
+}
+
+.pure-volume-tagline-text {
+	font-size: 15px;
+	color: #4d4d4d;
+	float: right;
+}
+
+header {
+  background-color: black;
+  padding: 1rem;
+}
+
+.headerVid {
+  margin: 0 auto;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ac4db3;
+}
+
+header p {
+  color: white;
+}
+/***************************/
+
+/**********Homepage*********/
+#latestSection h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 1rem;
+	clear: both;
+}
+
+#latestBg {
+	background-color: #3d1144;
+  	padding: 1em;
+	background-image: url(../images/recordplayer-bckgnd-img.jpg);
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#latestBg h4 {
+  	font-size: 22px;
+	line-height: 28px;
+  	font-weight: inherit;
+  	color: #ac4db3;
+  	margin-top: 60px;
+	margin-bottom: 10px;
+	padding-right: 20px;
+}
+
+#latestText p
+{
+	color: white;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 60px;
+	padding-right: 20px;
+	font-family: Raleway;
+	margin-top: 10px;
+}
+
+.latestImage {
+  float: left;
+}
+
+.post {
+  border: 1px solid red;
+  height: 500px;
+  width: 150px;
+  padding-left: 3em;
+  padding-top: 2em;
+}
+
+/* Class for the numbers that are above each of the latest articles */
+.the-lastest-articles-numbers {
+	font-size: 36px;
+	color: #4d4d4d;
+	font-weight: normal;
+  	line-height: 0.333;
+	margin-bottom: 30px;
+}
+
+/* Class for the titles of the latest articles */
+.the-latest-artlicles-titles {
+	color: #ac4db3;
+	font-size: 20px;
+	line-height: 26px;
+	margin-top: 10px;
+	font-weight: lighter;
+	float: left;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+.the-latest-artlicles-titles:hover {
+	color: #4d4d4d;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+}
+
+.the-latest-articles-categorys {
+	font-size: 16px;
+	color: #4d4d4d;
+	line-height: 12px;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.the-latest-articles-categorys:hover {
+	text-decoration: none;
+	color: #7E7E7E;
+	transition-duration: 0.5s;
+	transition-delay: 0.1s;
+}
+
+#latestSection .the-latest-articles-categorys {
+	color: #fff;
+	font-size: 25px;
+	font-weight: lighter;
+}
+/***************************/
+
+
+/**********Footer***********/
+footer {
+  	background-color: #3d1144;
+  	padding: 1em;
+	background-image: url(../images/recordplayer-bckgnd-img.jpg);
+	background-position: center; /* Center the image */
+  	background-repeat: no-repeat;
+  	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#footer-logo {
+	margin: 0 auto;
+}
+
+footer h2 {
+  display: none;
+}
+
+footer img {
+  margin: 0 auto;
+}
+
+footer nav ol li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 2rem;
+  margin-bottom: 1.5rem;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.footer-number-font {
+	font-size: 12px;
+	color: #c5c5c5;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-weight: lighter;
+	}
+
+.footer-links-font {
+	font-size: 12px;
+	color: #c5c5c5;
+	float: left;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	}
+
+/* mouse over link */
+.footer-links-font:hover {
+	color: #ac4db3;
+	transition-duration: 0.5s;
+	text-decoration: none;
+	}
+
+.footer-underscore-font {
+	font-size: 12px;
+	line-height: 5px;
+	color: #c5c5c5;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	font-weight: lighter;
+	}
+/***************************/
+
+/**ARTICLE PAGE*************/
+
+.bgimg
+{
+  width: 100%;
+  z-index: 0;
+}
+
+#purevolumearticleheader
+{
+	color: #ac4db3;
+	font-size: 122px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: right;
+	margin-right: 25px;
+}
+
+#purevolumearticletext
+{
+	font-size: 17.78px;
+	text-align: right;
+	margin-right: 20px;
+	font-weight: 600;
+	color: #4d4d4d;
+	margin-bottom: 20px;
+	line-height: 1.2;
+
+}
+
+.entertainmentheading
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	color: #4d4d4d;
+}
+
+#draketitle
+{
+	font-size: 52px;
+	color: #ac4db3;
+	padding-bottom: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+#drakemainphoto
+{
+	margin-bottom: 20px;
+}
+
+.main-article-text
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #4d4d4d;
+	line-height: 1.5;
+}
+
+.boldedline
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color: #4d4d4d;
+}
+
+.sectionheader
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	color: #4d4d4d;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.photocredit
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #4d4d4d;
+}
+
+.photolink
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #ac4db3;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+#boldtext
+{
+	font-weight: bolder;
+}
+
+.article-imgs
+{
+	width: 500px;
+	height: auto;
+	margin: 0;
+}
+
+.more-button
+{
+	align-content: center;
+	background-color: #3f1744;
+	padding: 20px;
+	width: 360px;
+	height: 60px;
+	font-size: 20px;
+	color: white;
+	font-family: Raleway;
+}
+
+.more-button:hover
+{
+	opacity: 0.9;
+}
+
+h6
+{
+	font-family: Raleway;
+	color: white;
+	font-size: 30px;
+}
+
+.storycategory
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18.4px;
+	font-weight: 400;
+	color: #ac4db3;
+	margin-top: 10px;
+}
+
+.storytitle
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18.4px;
+	font-weight: 600;
+	color: white;
+	line-height: 1.3;
+	margin-top: 5px;
+}
+
+.story
+{
+	float: left;
+	max-width: 60%;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+}
+
+.storyimg
+{
+	float: right;
+	margin: 0;
+	padding: 0;
+	max-width: 35%;
+	margin-left: 5%;
+}
+
+.storybox
+{
+	margin-top: 30px;
+
+}
+
+a:hover
+{
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+/**************************/
