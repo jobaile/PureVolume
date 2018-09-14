@@ -9,18 +9,12 @@ We have the index.html set-up and our secondary page is "article.html".
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap Framework
 
 ## Authors
-* **Carter Rose** - *Designer*
-* **Fernando D'Oria** - *Video Person*
-* **Logan Litman** - *Coder*
-* **Joanna Baile** - *Coder* and *Project Manager*
+* **Carter Rose** (https://github.com/crose20) - *Design*
+* **Fernando D'Oria** (https://github.com/nandodoria) - *Motion*
+* **Logan Litman** (https://github.com/loganlitman) - *Coding*
+* **Joanna Baile** (https://github.com/jobaile) - *Coding* and *Project Manager*
 
-### Getting Started
-We created the documents necessary for the project.
-We have the index.html set-up and our secondary page is "article.html".
-## Built with
-* [Bootstrap](https://getbootstrap.com/) - Bootstrap Framework
-
-### Progress
+## Progress
 * 9/07 - Started repo; created base files; created designs
 * 9/10 - Checkpoint; Tweaking design of the website, created a mock Instagram page
 * 9/11 - Created base for HTML files, CSS, and JavaScript for video player
@@ -33,7 +27,7 @@ We have the index.html set-up and our secondary page is "article.html".
 * 9/12 - Checkpoint; Finishing off HTML files and video
 * 9/13 - We're done!
 
-### Installing
+## Installing
 
 Open Terminal or Command Line
 
@@ -52,9 +46,9 @@ $ cd PureVolume
 
 ```
 
-### Resources
+## Resources
 * We made a [Pinterest board](https://www.pinterest.ca/cartererose/music-website-design/) for inspiration
 
-### License
+## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT/).
