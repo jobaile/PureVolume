@@ -8,6 +8,9 @@
   var volumeBar = document.querySelector('#volumeBar');
   var fullVideo = document.querySelector("#full-screen");
 
+var vidPlayer = document.querySelector("#headerVid");
+
+
   function playVideo(){
     console.log("from playVideo");
     if (video.paused) {
