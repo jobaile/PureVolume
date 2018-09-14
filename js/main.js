@@ -1,24 +1,25 @@
-(function(){
-
-  //console.log("SEAF fired");
+(() => {
+  //console.log("PureVolume website");
   var video = document.querySelector("#headerVid");
   var playButton = document.querySelector("#playPause");
   var seekBar = document.querySelector("#seek-bar");
   var rewindVideo = document.querySelector("#rewind");
   var muteButton = document.querySelector("#muteVideo");
-  var volumeBar = document.querySelector("#volume-bar");
+  var volumeBar = document.querySelector('#volumeBar');
   var fullVideo = document.querySelector("#full-screen");
+
+// Functions
 
   function playVideo(){
     console.log("from playVideo");
-    if (video.paused == true) {
+    if (video.paused) {
+    document.getElementById("playPause").innerHTML='<button id="playPause"><i class="fas fa-pause"></i></button>';
     video.play();
-    playButton.innerHTML = "Pause";
   } else {
+    document.getElementById("playPause").innerHTML='<button id="playPause"><i class="fas fa-play"></i></button>';
     video.pause();
-    playButton.innerHTML = "Play";
   }
-  }
+}
 
   function progressBar(){
     //console.log("from progressBar");
@@ -39,16 +40,25 @@
 
   function muteVideo(){
     console.log("from muteVideo");
-    if (video.muted == false) {
-    video.muted = true;
-    muteButton.innerHTML = "Unmute";
-    } else {
+    if (video.muted) {
     video.muted = false;
-    muteButton.innerHTML = "Mute";
+    document.getElementById("muteVideo").innerHTML='<button id="muteVideo" class="control"><i class="fas fa-volume-up"></i></button>';
+    theVolumeSVG.dataset.icon = "volume-up";
+    volumeBar.value = 1;
+    vidPlayer.volume = 1;
+    } else {
+    video.muted = true;
+    document.getElementById("muteVideo").innerHTML='<button id="muteVideo" class="control"><i class="fas fa-volume-off"></i></button>';
+    volumeBar.value = 0;
+    vidPlayer.volume = 0;
     }
   }
 
-  function fullScreen(){ //This will give default video controls
+  function changeVolume() {
+    vidPlayer.volume = volumeBar.value;
+  }
+
+  function fullScreen(){
     console.log("from fullScreen");
     if (video.requestFullscreen) {
       video.requestFullscreen();
@@ -59,12 +69,14 @@
     }
   }
 
+//Event Listeners
 
-  playButton.addEventListener("click", playVideo, false); //VIDEO
+  playButton.addEventListener("click", playVideo); //VIDEO
   seekBar.addEventListener("change", progressBar, false); //SEEK BAR
   muteButton.addEventListener("click", muteVideo, false); //MUTE
+  volumeBar.addEventListener('change', changeVolume, false); // VOLUME BAR
   rewindVideo.addEventListener("click", rewindVid, false); //REWIND VIDEO X
-  fullVideo.addEventListener("click", fullScreen, false); //FULLSCREEN
+  fullVideo.addEventListener("click", fullScreen); //FULLSCREEN
   video.addEventListener("timeupdate", progPlay, false); //TIME UPDATE
 
 })();
