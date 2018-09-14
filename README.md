@@ -1,6 +1,6 @@
 # PureVolume
 Fanshawe Group Project
-This project is a redesign of [PureVolume](https://purevolume.com).=======
+This project is a redesign of [PureVolume](https://purevolume.com).
 
 ## Getting Started
 We created the documents necessary for the project.
