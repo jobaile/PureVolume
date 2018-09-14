@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
-   CSS RESET!!
+   CSS RESET!!!
 */
 
 html, body, div, span, applet, object, iframe,
@@ -441,6 +441,7 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-top: 10px;
 }
 
+
 .read-more-link {
 	text-decoration: underline;
 	color: #ac4db3;
@@ -669,8 +670,8 @@ input[type=range]:focus::-ms-fill-upper {
 #purevolumearticleheader
 {
 	color: #ac4db3;
-	font-size: 122px;
-	font-weight: 700;
+	font-size: 5rem;
+	font-weight: 900;
 	text-transform: uppercase;
 	text-align: right;
 	margin-right: 25px;
@@ -788,6 +789,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 h6
 {
+	font-family: Raleway;
 	color: white;
 	font-size: 30px;
 }
@@ -799,6 +801,18 @@ h6
 	font-weight: 400;
 	color: #ac4db3;
 	margin-top: 10px;
+}
+
+.storycategory:hover
+{
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.storytitle:hover
+{
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 .storytitle
