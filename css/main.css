@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
-   CSS RESET!!!
+   CSS RESET!!
 */
 
 html, body, div, span, applet, object, iframe,
@@ -87,7 +87,6 @@ body {
   	background-repeat: repeat-y; /* Repeat the image horizontally */
   	background-size: cover; /* Resize the background image to cover the entire container */
 }
-<<<<<<< HEAD
 
 
 button {
@@ -154,74 +153,6 @@ button {
     font-weight: lighter;
   }
 
-=======
-
-
-button {
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-}
-
-.center {
-  margin: auto;
-}
-
-#vidControls {
-  background-color: #333333;
-  padding-top: 5px;
-  height: 30px;
-}
-.fa-pause, .fa-play, .fa-step-backward, .fa-volume-up, .fa-volume-off, .fa-expand-arrows-alt {
-	color: #e4e4e4;
-}
-/***************************/
-
-/**********Top Navigation***********/
-
-  #header-logo {
-    margin: 0 auto;
-  }
-
-  .topBar {
-    width: 100%;
-    height: 20px;
-    background-color: #512653;
-    margin-bottom: 1rem;
-  }
-
-  .topNav nav ol {
-    margin-top: 1rem;
-  }
-  .topNav nav ol li{
-    display: inline-block;
-    margin-bottom: 1.5rem;
-  }
-
-  .topNav nav {
-    display: block;
-  }
-
-  .topNav nav img {
-    display: block;
-    margin: 0 auto;
-  }
-
-.nav-link-container {
-    margin-left: 20px;
-  }
-
-.nav-numbers-font {
-    font-size: 12px;
-    color: #5a5a5a;
-    float: left;
-    font-weight: lighter;
-  }
-
->>>>>>> origin/master
 
 /* unvisited link */
 .nav-links-font {
@@ -465,13 +396,10 @@ input[type=range]:focus::-ms-fill-upper {
 }
 /*Video Player End*/
 
-<<<<<<< HEAD
 #latestSection {
 	clear: both;
 }
 
-=======
->>>>>>> origin/master
 #latestSection h3 {
   font-size: 2rem;
   font-weight: bold;
@@ -513,7 +441,6 @@ input[type=range]:focus::-ms-fill-upper {
 	margin-top: 10px;
 }
 
-<<<<<<< HEAD
 .read-more-link {
 	text-decoration: underline;
 	color: #ac4db3;
@@ -637,8 +564,6 @@ input[type=range]:focus::-ms-fill-upper {
   }
 }
 
-=======
->>>>>>> origin/master
 /* Class for the numbers that are above each of the latest articles */
 #latestSection .the-lastest-articles-numbers {
 	font-size: 2rem;
@@ -694,7 +619,8 @@ input[type=range]:focus::-ms-fill-upper {
 	color: #4d4d4d;
 	line-height: 12px;
 	font-weight: lighter;
-  padding-bottom: 50px;
+	margin: 0px;
+	padding: 0px;
 	float: left;
 }
 
@@ -711,71 +637,6 @@ input[type=range]:focus::-ms-fill-upper {
 	font-weight: lighter;
 }
 
-<<<<<<< HEAD
-=======
-#latestSection img {
-  padding-right: 2rem;
-}
-
-#articleSection h4 {
-	font-size: 1.2rem;
-	margin: 1rem 0 1rem 0;
-	padding-right: 2.5rem;
-}
-
-#articleSection h3 {
-	font-size: 1.2rem;
-}
-
-}
-
-.article-post img {
-	width: 300px;
-}
-
-@media (min-width: 992px) {
-
-  #articleSection {
-    margin-left: 12em;
-  }
-
-  input[type=range] {
-    -webkit-appearance: none;
-    width: 75%;
-    margin: 5.65px 0;
-  }
-
-  input[type=range]#volumeBar {
-    -webkit-appearance: none;
-    width: 10%;
-    margin: 5.65px 0;
-  }
-
-	.article-post img {
-		width: 450px;
-	}
-
-  #latestBg h4 {
-    font-size: 1.5rem;
-  	line-height: 28px;
-    font-weight: inherit;
-    color: #ac4db3;
-    margin-top: 10rem;
-  	margin-bottom: 10px;
-  	padding-right: 20px;
-  }
-
-  .the-latest-articles-categorys {
-  	font-size: 16px;
-  	color: #4d4d4d;
-  	line-height: 12px;
-  	font-weight: lighter;
-    padding-left: 2rem;
-  	float: left;
-  }
-}
-
->>>>>>> origin/master
 #btn-view-more {
 	background-color:#a43fcc;
 	display:inline-block;
@@ -927,7 +788,6 @@ input[type=range]:focus::-ms-fill-upper {
 
 h6
 {
-	font-family: Raleway;
 	color: white;
 	font-size: 30px;
 }
@@ -985,14 +845,9 @@ footer {
   padding: 1em;
 	background-image: url(../images/recordplayer-bckgnd-img.jpg);
 	background-position: center; /* Center the image */
-<<<<<<< HEAD
   background-repeat: repeat-y;
   background-size: cover; /* Resize the background image to cover the entire container */
 	margin-top: 50px;
-=======
-  background-repeat: no-repeat;
-  background-size: cover; /* Resize the background image to cover the entire container */
->>>>>>> origin/master
 }
 
 #footer-logo {
